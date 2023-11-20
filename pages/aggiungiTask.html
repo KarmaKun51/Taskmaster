@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aggiungi Task</title>
+    <link rel="stylesheet" href="../css/TaskMasterStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+</head>
+<body id="body">
+    <script type="text/javascript" src="../scriptJS/general.js"></script>
+    <div id="divContenitore">
+        <div id="divPrimario">
+            <header>
+                <img src="../images/taskMasterLogo.png" class="immagineDiTesta">
+                <h1>TaskMaster</h1>
+            </header>
+            <nav>
+                <a href="../index.html"><button class="btn btn-primary">Home</button></a>
+            </nav>
+    <h1>Aggiungi Task</h1>
+        <form>
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" class="form-control" id="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="tipo">Tipo:</label>
+                <input type="text" class="form-control" id="tipo" required>
+            </div><br>
+            <div class="form-group">
+                <label for="stato">Stato:</label>
+                <select id="stato">
+                    <option value="Appena Iniziato">Appena Iniziato</option>
+                    <option value="In corso">In corso</option>
+                    <option value="Finito">Finito</option>
+                </select>
+            </div><br>
+            <div>
+                <button type="button" class="btn btn-primary" onclick="aggiungiTask()">Aggiungi Task</button>
+            </div>
+        </form>
+</body>
+</html>
